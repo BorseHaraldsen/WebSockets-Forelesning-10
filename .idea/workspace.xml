@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c44c829a-7ec8-4bc9-80e0-7dc070b32d68" name="Changes" comment="Make server work">
-      <change afterPath="$PROJECT_DIR$/client/components/application.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/index.jsx" afterDir="false" />
+    <list default="true" id="c44c829a-7ec8-4bc9-80e0-7dc070b32d68" name="Changes" comment="Application structure, and prettier">
+      <change afterPath="$PROJECT_DIR$/client/applications.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/index.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +105,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1698230923152</updated>
-      <workItem from="1698230924146" duration="2263000" />
+      <workItem from="1698230924146" duration="2705000" />
     </task>
     <task id="LOCAL-00001" summary="Npm install everything">
       <option name="closed" value="true" />
@@ -142,7 +139,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698232076094</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Application structure, and prettier">
+      <option name="closed" value="true" />
+      <created>1698233253949</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1698233253949</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -152,7 +157,8 @@
     <MESSAGE value="Npm install everything" />
     <MESSAGE value="npm dev scripts everywhere" />
     <MESSAGE value="Make server work" />
-    <option name="LAST_COMMIT_MESSAGE" value="Make server work" />
+    <MESSAGE value="Application structure, and prettier" />
+    <option name="LAST_COMMIT_MESSAGE" value="Application structure, and prettier" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
