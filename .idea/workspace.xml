@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c44c829a-7ec8-4bc9-80e0-7dc070b32d68" name="Changes" comment="Server parses signedcookie with username also for the websockets.">
+    <list default="true" id="c44c829a-7ec8-4bc9-80e0-7dc070b32d68" name="Changes" comment="LOOK AT THIS FOR EXAM.&#10;For fixing username in bold and proper print to web.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/components/application.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/components/application.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -239,7 +237,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699801425722</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="LOOK AT THIS FOR EXAM.&#10;For fixing username in bold and proper print to web.">
+      <option name="closed" value="true" />
+      <created>1699801977050</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1699801977050</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -259,7 +265,8 @@
     <MESSAGE value="Not functioning loginform" />
     <MESSAGE value="Try to fetch userName on CLIENT" />
     <MESSAGE value="Server parses signedcookie with username also for the websockets." />
-    <option name="LAST_COMMIT_MESSAGE" value="Server parses signedcookie with username also for the websockets." />
+    <MESSAGE value="LOOK AT THIS FOR EXAM.&#10;For fixing username in bold and proper print to web." />
+    <option name="LAST_COMMIT_MESSAGE" value="LOOK AT THIS FOR EXAM.&#10;For fixing username in bold and proper print to web." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
