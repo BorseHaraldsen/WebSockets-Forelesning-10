@@ -5,18 +5,18 @@ export function Application() {
 
   async function loadUsername() {
     const res = await fetch("/api/login");
-    if (!res.ok) {
+    if (!res.ok && res.status != 401) {
       throw new Error("Failed to fetch user" + res.statusText);
     }
     const user = await res.json();
-    setUsername(user.userName);
+    setUsername(user.username);
   }
 
   useEffect(() => {
     loadUsername();
   }, []);
 
-  const [credentials, setCredentials] = useState();
+  const [credentials, setCredentials] = useState("");
 
   async function handleLogin(e) {
     e.preventDefault();
@@ -35,7 +35,7 @@ export function Application() {
   if (!username) {
     return (
       <>
-        <form onSumbit={handleLogin}>
+        <form onSubmit={handleLogin}>
           Username:
           <input
             type="text"
@@ -48,10 +48,10 @@ export function Application() {
     );
   }
 
-  return <ChatWindow />;
+  return <ChatWindow username={username} />;
 }
 
-export function ChatWindow() {
+export function ChatWindow({ username }) {
   const [messages, setMessages] = useState([]);
   const [newMessage, setNewMessage] = useState("");
   const [webSocket, setWebSocket] = useState();
@@ -77,6 +77,7 @@ export function ChatWindow() {
     <>
       <header>
         <h1>Chat Application</h1>
+        <div>{username}</div>
       </header>
 
       <main>

@@ -1,6 +1,7 @@
 import express from "express";
 import * as path from "path";
 import cookieParser from "cookie-parser";
+import cookie from "cookie";
 import { WebSocketServer } from "ws";
 import dotenv from "dotenv";
 
@@ -18,6 +19,16 @@ app.post("/api/login", (req, res) => {
   res.cookie("username", req.body.credentials, { signed: true });
   res.sendStatus(201);
 });
+app.get("/api/login", (req, res) => {
+  const { username } = req.signedCookies;
+
+  if (!username) {
+    res.sendStatus(401);
+  } else {
+    res.send({ username });
+  }
+});
+
 app.use((req, res, next) => {
   if (req.method === "GET" && !req.path.startsWith("/api")) {
     res.sendFile(path.resolve("../client/dist/index.html"));
@@ -30,15 +41,25 @@ const server = app.listen(process.env.PORT || 3000);
 const sockets = [];
 
 server.on("upgrade", (req, socket, head) => {
+  const cookies = cookie.parse(req.headers.cookie);
+  const signedCookies = cookieParser.signedCookies(cookies, cookieSecret);
+
+  const { username } = signedCookies;
+  //const username = req.signedCookies;
+
   webSocketServer.handleUpgrade(req, socket, head, (socket) => {
     sockets.push(socket);
-    socket.send("hello from the server");
+    socket.send(`Hello to "${username}" from the server `);
 
-    socket.on("message", (message) => {
-      console.log(message.toString());
-
+    socket.on("message", (buffer) => {
+      const message = buffer.toString();
       for (const s of sockets) {
-        s.send(message.toString());
+        s.send(
+          JSON.stringify({
+            username,
+            message,
+          }),
+        );
       }
     });
   });
