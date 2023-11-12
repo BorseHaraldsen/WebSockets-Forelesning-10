@@ -3,6 +3,19 @@ import { useEffect, useState } from "react";
 export function Application() {
   const [username, setUsername] = useState();
 
+  async function loadUsername() {
+    const res = await fetch("/api/login");
+    if (!res.ok) {
+      throw new Error("Failed to fetch user" + res.statusText);
+    }
+    const user = await res.json();
+    setUsername(user.userName);
+  }
+
+  useEffect(() => {
+    loadUsername();
+  }, []);
+
   const [credentials, setCredentials] = useState();
 
   async function handleLogin(e) {
@@ -27,7 +40,7 @@ export function Application() {
           <input
             type="text"
             value={credentials}
-            onChange={setCredentials(e.target.value)}
+            onChange={(e) => setCredentials(e.target.value)}
           />
           <button>Log In.</button>
         </form>
