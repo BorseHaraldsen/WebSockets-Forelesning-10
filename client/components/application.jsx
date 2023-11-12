@@ -2,6 +2,14 @@ import { useState } from "react";
 
 export function Application() {
   const [messages, setMessages] = useState(["hello", "Everybody! : )"]);
+  const [newMessage, setNewMessage] = useState("");
+
+  function handleSubmit(e) {
+    e.preventDefault();
+
+    setMessages((current) => [...current, newMessage]);
+    setNewMessage("");
+  }
 
   return (
     <>
@@ -16,8 +24,14 @@ export function Application() {
       </main>
 
       <footer>
-        <input autoFocus />
-        <button>Chat</button>
+        <form onSubmit={handleSubmit}>
+          <input
+            autoFocus
+            value={newMessage}
+            onChange={(e) => setNewMessage(e.target.value)}
+          />
+          <button>Chat</button>
+        </form>
       </footer>
     </>
   );
