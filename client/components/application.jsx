@@ -1,11 +1,23 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export function Application() {
-  const [messages, setMessages] = useState(["hello", "Everybody! : )"]);
+  const [messages, setMessages] = useState([]);
   const [newMessage, setNewMessage] = useState("");
+  const [webSocket, setWebSocket] = useState();
+
+  useEffect(() => {
+    const webSocket = new WebSocket("ws://" + window.location.host);
+    webSocket.onmessage = (event) => {
+      console.log(event.data);
+      setMessages((current) => [...current, event.data]);
+    };
+    setWebSocket(webSocket);
+  }, []);
 
   function handleSubmit(e) {
     e.preventDefault();
+
+    webSocket.send(newMessage);
 
     setMessages((current) => [...current, newMessage]);
     setNewMessage("");
@@ -18,8 +30,8 @@ export function Application() {
       </header>
 
       <main>
-        {messages.map((message) => (
-          <li>{message}</li>
+        {messages.map((message, index) => (
+          <li key={index}>{message}</li>
         ))}
       </main>
 

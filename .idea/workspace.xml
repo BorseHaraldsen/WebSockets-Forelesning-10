@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c44c829a-7ec8-4bc9-80e0-7dc070b32d68" name="Changes" comment="Added useState for the list instead">
+    <list default="true" id="c44c829a-7ec8-4bc9-80e0-7dc070b32d68" name="Changes" comment="Chat functioning with ourselves">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/applications.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/applications.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/components/application.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/components/application.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +109,7 @@
       <option name="presentableId" value="Default" />
       <updated>1698230923152</updated>
       <workItem from="1698230924146" duration="2937000" />
-      <workItem from="1699794811377" duration="833000" />
+      <workItem from="1699794811377" duration="2551000" />
     </task>
     <task id="LOCAL-00001" summary="Npm install everything">
       <option name="closed" value="true" />
@@ -180,7 +183,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699795174904</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Chat functioning with ourselves">
+      <option name="closed" value="true" />
+      <created>1699795673363</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1699795673363</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,7 +204,8 @@
     <MESSAGE value="Application structure, and prettier" />
     <MESSAGE value="Application layout a bit" />
     <MESSAGE value="Added useState for the list instead" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added useState for the list instead" />
+    <MESSAGE value="Chat functioning with ourselves" />
+    <option name="LAST_COMMIT_MESSAGE" value="Chat functioning with ourselves" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
