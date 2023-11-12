@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c44c829a-7ec8-4bc9-80e0-7dc070b32d68" name="Changes" comment="Chat functioning with ourselves">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="c44c829a-7ec8-4bc9-80e0-7dc070b32d68" name="Changes" comment="Server connect to websocket">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/components/application.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/components/application.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -109,7 +105,7 @@
       <option name="presentableId" value="Default" />
       <updated>1698230923152</updated>
       <workItem from="1698230924146" duration="2937000" />
-      <workItem from="1699794811377" duration="2551000" />
+      <workItem from="1699794811377" duration="2869000" />
     </task>
     <task id="LOCAL-00001" summary="Npm install everything">
       <option name="closed" value="true" />
@@ -191,7 +187,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699795673363</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Server connect to websocket">
+      <option name="closed" value="true" />
+      <created>1699797431020</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1699797431020</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -205,7 +209,8 @@
     <MESSAGE value="Application layout a bit" />
     <MESSAGE value="Added useState for the list instead" />
     <MESSAGE value="Chat functioning with ourselves" />
-    <option name="LAST_COMMIT_MESSAGE" value="Chat functioning with ourselves" />
+    <MESSAGE value="Server connect to websocket" />
+    <option name="LAST_COMMIT_MESSAGE" value="Server connect to websocket" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
