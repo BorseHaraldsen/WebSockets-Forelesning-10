@@ -43,13 +43,15 @@ const sockets = [];
 server.on("upgrade", (req, socket, head) => {
   const cookies = cookie.parse(req.headers.cookie);
   const signedCookies = cookieParser.signedCookies(cookies, cookieSecret);
-
   const { username } = signedCookies;
-  //const username = req.signedCookies;
 
   webSocketServer.handleUpgrade(req, socket, head, (socket) => {
     sockets.push(socket);
-    socket.send(`Hello to "${username}" from the server `);
+    socket.send(
+      JSON.stringify({
+        message: `Hello to "${username}" from the server.`,
+      }),
+    );
 
     socket.on("message", (buffer) => {
       const message = buffer.toString();

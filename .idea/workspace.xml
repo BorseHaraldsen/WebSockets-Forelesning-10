@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c44c829a-7ec8-4bc9-80e0-7dc070b32d68" name="Changes" comment="Try to fetch userName on CLIENT">
+    <list default="true" id="c44c829a-7ec8-4bc9-80e0-7dc070b32d68" name="Changes" comment="Server parses signedcookie with username also for the websockets.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/applications.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/applications.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/components/application.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/components/application.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -234,7 +231,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699799608583</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Server parses signedcookie with username also for the websockets.">
+      <option name="closed" value="true" />
+      <created>1699801425722</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1699801425722</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -253,7 +258,8 @@
     <MESSAGE value="Client doesnt write new message as well" />
     <MESSAGE value="Not functioning loginform" />
     <MESSAGE value="Try to fetch userName on CLIENT" />
-    <option name="LAST_COMMIT_MESSAGE" value="Try to fetch userName on CLIENT" />
+    <MESSAGE value="Server parses signedcookie with username also for the websockets." />
+    <option name="LAST_COMMIT_MESSAGE" value="Server parses signedcookie with username also for the websockets." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
