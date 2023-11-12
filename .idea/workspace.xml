@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c44c829a-7ec8-4bc9-80e0-7dc070b32d68" name="Changes" comment="Server connect to websocket">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/server.js" afterDir="false" />
+    <list default="true" id="c44c829a-7ec8-4bc9-80e0-7dc070b32d68" name="Changes" comment="Server echoes all messages from the client. Aka 2 message locally, 1 on another.">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +104,7 @@
       <option name="presentableId" value="Default" />
       <updated>1698230923152</updated>
       <workItem from="1698230924146" duration="2937000" />
-      <workItem from="1699794811377" duration="2869000" />
+      <workItem from="1699794811377" duration="3004000" />
     </task>
     <task id="LOCAL-00001" summary="Npm install everything">
       <option name="closed" value="true" />
@@ -195,7 +194,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699797431020</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Server echoes all messages from the client. Aka 2 message locally, 1 on another.">
+      <option name="closed" value="true" />
+      <created>1699797787415</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1699797787415</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -210,7 +217,8 @@
     <MESSAGE value="Added useState for the list instead" />
     <MESSAGE value="Chat functioning with ourselves" />
     <MESSAGE value="Server connect to websocket" />
-    <option name="LAST_COMMIT_MESSAGE" value="Server connect to websocket" />
+    <MESSAGE value="Server echoes all messages from the client. Aka 2 message locally, 1 on another." />
+    <option name="LAST_COMMIT_MESSAGE" value="Server echoes all messages from the client. Aka 2 message locally, 1 on another." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
